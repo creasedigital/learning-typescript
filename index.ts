@@ -27,3 +27,25 @@ employee = [
   [25, 'Jon'],
   [38, 'Simeone'],
 ]
+
+//Union -want a variable to hold more than a type
+let pid: string | number
+pid='56'
+
+// Enum -named constants
+enum Direction1 {
+  Up=99,
+  Down,
+  Left,
+  Right
+}
+// Enum -named constants
+enum Direction2 {
+  Up= 'Up',
+  Down = 'Down',
+  Left = 'Left',
+  Right = 'Right'
+}
+
+console.log(Direction1.Left)
+console.log(Direction2.Right)

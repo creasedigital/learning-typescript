@@ -43,3 +43,13 @@ var Direction2;
 })(Direction2 || (Direction2 = {}));
 console.log(Direction1.Left);
 console.log(Direction2.Right);
+// Objects
+//-----------------
+const user = {
+    id: 56,
+    name: 'Travolta'
+};
+const userDetails = {
+    id: 56,
+    name: 'Travolta'
+};

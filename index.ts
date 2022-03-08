@@ -49,3 +49,25 @@ enum Direction2 {
 
 console.log(Direction1.Left)
 console.log(Direction2.Right)
+
+// Objects
+//-----------------
+const user: {
+  id: number,
+  name: string
+} = {
+  id: 56,
+  name: 'Travolta'
+}
+//-----------------
+// OR to ensure a cleaner code use type syntax
+//-----------------
+type UserDetails = {
+  id: number,
+  name: string
+}
+
+const userDetails: UserDetails = {
+  id: 56,
+  name: 'Travolta'
+}

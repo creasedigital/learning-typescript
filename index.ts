@@ -114,3 +114,43 @@ function logMessage (message :string | number):void {
 }
 
 logMessage('Hello TS!')
+
+// classes
+
+class Person{
+  id: number
+  name: string
+ 
+  constructor(id: number, name: string) {
+    this.id = id 
+    this.name = name
+  }
+}
+
+const lorem = new Person(1, 'Lorem Ipsum')
+const dolor = new Person(2, 'Dolor Sit')
+
+class Employee extends Person {
+  position: string
+
+  constructor(id:number, name:string, position: string) {
+
+    super(id, name)
+    this.position = position ;
+  }
+}
+
+const emp = new Employee(1, 'Lana', 'Developer')
+
+// Generics -are used to build reusable component
+// function getArray(items: any[]): any[]{
+//   return new Array ().concat(items)
+// }
+function getArray<T>(items: T[]): T[]{
+  return new Array ().concat(items)
+}
+
+let numArray = getArray<number>([1,18.9,45])
+let strArray = getArray<string>(['Alphabet', 'Echo', 'Letter'])
+
+strArray.push('yeah')

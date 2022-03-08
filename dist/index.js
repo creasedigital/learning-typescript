@@ -73,3 +73,29 @@ function logMessage(message) {
     console.log(message);
 }
 logMessage('Hello TS!');
+// classes
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+const lorem = new Person(1, 'Lorem Ipsum');
+const dolor = new Person(2, 'Dolor Sit');
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(1, 'Lana', 'Developer');
+// Generics -are used to build reusable component
+// function getArray(items: any[]): any[]{
+//   return new Array ().concat(items)
+// }
+function getArray(items) {
+    return new Array().concat(items);
+}
+let numArray = getArray([1, 18.9, 45]);
+let strArray = getArray(['Alphabet', 'Echo', 'Letter']);
+strArray.push('yeah');

@@ -53,6 +53,12 @@ const userDetails = {
     id: 56,
     name: 'Travolta'
 };
+const userInfo = {
+    id: 96,
+    name: 'Travis'
+};
+const add = (x, y) => x + y;
+const minus = (x, y) => x - y;
 // Type Assertion
 let cid = 19;
 // let customerId = <number>cid

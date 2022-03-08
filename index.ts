@@ -71,6 +71,30 @@ const userDetails: UserDetails = {
   id: 56,
   name: 'Travolta'
 }
+//-----------------
+// Interfaces - are used with Objects an are very similar to type
+//-----------------
+
+// object values set to read-only via type or interface cannot be reassigned
+interface UserInfoInterface {
+  id: number
+  name: string
+  age?: number //would make age optional
+}
+
+const userInfo: UserInfoInterface = {
+  id: 96,
+  name: 'Travis'
+}
+
+// Interfaces - can be used with functions
+interface MathFunc {
+  (x: number, y: number): number
+}
+
+const add : MathFunc = (x: number, y: number): number => x + y
+const minus : MathFunc = (x: number, y: number): number => x - y
+
 
 // Type Assertion
 let cid: any = 19

@@ -53,3 +53,17 @@ const userDetails = {
     id: 56,
     name: 'Travolta'
 };
+// Type Assertion
+let cid = 19;
+// let customerId = <number>cid
+// OR
+let customerId = cid;
+// Functions
+function addNumber(x, y) {
+    return x + y;
+}
+console.log(addNumber(9, 13));
+function logMessage(message) {
+    console.log(message);
+}
+logMessage('Hello TS!');

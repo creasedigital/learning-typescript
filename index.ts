@@ -71,3 +71,22 @@ const userDetails: UserDetails = {
   id: 56,
   name: 'Travolta'
 }
+
+// Type Assertion
+let cid: any = 19
+// let customerId = <number>cid
+// OR
+let customerId = cid as number
+
+// Functions
+function addNumber (x:number, y:number): number {
+  return x + y
+}
+
+console.log(addNumber(9,13))
+
+function logMessage (message :string | number):void {
+  console.log(message)
+}
+
+logMessage('Hello TS!')
